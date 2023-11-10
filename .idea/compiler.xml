@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="plugin-sys-api" />
+        <module name="plugin-tool-excel" />
+        <module name="web-app" />
+        <module name="common" />
+        <module name="plugin-tool-excel-api" />
+        <module name="plugin-gen" />
+        <module name="plugin-gen-api" />
+        <module name="plugin-sys" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="plugin" target="1.8" />
+      <module name="plugin-api" target="1.8" />
+      <module name="plugin-gen" target="1.8" />
+      <module name="plugin-gen-api" target="1.8" />
+      <module name="plugin-sys" target="1.8" />
+      <module name="plugin-sys-api" target="1.8" />
+      <module name="plugin-tool-excel" target="1.8" />
+      <module name="plugin-tool-excel-api" target="1.8" />
+      <module name="snowy" target="1.8" />
+      <module name="web-app" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common" options="-parameters" />
+      <module name="plugin-gen" options="-parameters" />
+      <module name="plugin-gen-api" options="-parameters" />
+      <module name="plugin-sys" options="-parameters" />
+      <module name="plugin-sys-api" options="-parameters" />
+      <module name="plugin-tool-excel" options="-parameters" />
+      <module name="plugin-tool-excel-api" options="-parameters" />
+      <module name="web-app" options="-parameters" />
+    </option>
+  </component>
+</project>

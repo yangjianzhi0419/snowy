@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.2</version>
+        <relativePath/>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yang</groupId>
+    <artifactId>snowy</artifactId>
+    <version>1.0</version>
+    <description>snowy开发平台-学习demo</description>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <snowy.version>2.0.0</snowy.version>
+        <spring-framework.version>5.3.26</spring-framework.version>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- 锁定依赖版本号 -->
+        <mybatis.version>2.2.2</mybatis.version>
+        <mybatis.plus.version>3.5.2</mybatis.plus.version>
+        <knife4j.version>3.0.3</knife4j.version>
+        <gson.version>2.9.1</gson.version>
+        <easyexcel.version>3.1.1</easyexcel.version>
+        <hutool.version>5.8.12</hutool.version>
+        <mysql.connector.java.version>8.0.28</mysql.connector.java.version>
+        <junit.version>4.13.2</junit.version>
+        <dynamic.datasource.version>3.5.1</dynamic.datasource.version>
+        <easy.trans.version>2.1.7</easy.trans.version>
+        <beetl.version>1.2.40.Beetl.RELEASE</beetl.version>
+    </properties>
+
+    <modules>
+        <!-- 基础通用模块 -->
+        <module>common</module>
+        <!-- 主启动模块 -->
+        <module>web-app</module>
+        <!-- 插件API接口模块 -->
+        <module>plugin-api</module>
+        <!-- 插件模块 -->
+        <module>plugin</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- mybatis -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+            <!-- https://doc.xiaominfo.com/knife4j/documentation/get_start.html-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+            <!-- https://github.com/alibaba/easyexcel -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>easyexcel</artifactId>
+                <version>${easyexcel.version}</version>
+            </dependency>
+            <!-- https://hutool.cn/docs/index.html#/-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <!-- mysql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.java.version}</version>
+            </dependency>
+
+            <!-- junit -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!-- dynamic-datasource -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>${dynamic.datasource.version}</version>
+            </dependency>
+
+            <!-- easy-trans -->
+            <dependency>
+                <groupId>com.fhs-opensource</groupId>
+                <artifactId>easy-trans-spring-boot-starter</artifactId>
+                <version>${easy.trans.version}</version>
+            </dependency>
+
+            <!-- easy-trans-mybatis-plus-extend -->
+            <dependency>
+                <groupId>com.fhs-opensource</groupId>
+                <artifactId>easy-trans-mybatis-plus-extend</artifactId>
+                <version>${easy.trans.version}</version>
+            </dependency>
+
+            <!-- beetl模板引擎 -->
+            <dependency>
+                <groupId>com.ibeetl</groupId>
+                <artifactId>beetl-framework-starter</artifactId>
+                <version>${beetl.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
