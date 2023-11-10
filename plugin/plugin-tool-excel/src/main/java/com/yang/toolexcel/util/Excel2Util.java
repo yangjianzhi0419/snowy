@@ -10,11 +10,11 @@ import cn.hutool.poi.excel.ExcelWriter;
 import com.alibaba.excel.EasyExcel;
 import com.yang.common.enums.CommonErrorCodeEnum;
 import com.yang.common.exception.CommonException;
-import com.yang.toolexcel.annotation.ExcelFieldOption;
+import com.yang.toolexcel.core.annotation.ExcelFieldOption;
+import com.yang.toolexcel.core.pojo.ExcelHeader2Option;
+import com.yang.toolexcel.core.runner.BatchImportRunner;
+import com.yang.toolexcel.core.runner.SingleImportRunner;
 import com.yang.toolexcel.listener.EasyExcelDataListener;
-import com.yang.toolexcel.pojo.ExcelHeader2Option;
-import com.yang.toolexcel.runner.BatchImportRunner;
-import com.yang.toolexcel.runner.SingleImportRunner;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
@@ -32,6 +32,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -103,17 +104,26 @@ public class Excel2Util {
     }
 
     /**
-     * 写出 xlsx文件
+     * 导出 xlsx文件
      * <p>
      * 注意 ExcelUtil.getWriter()默认创建xls格式的Excel，因此写出到客户端也需要自定义文件名为XXX.xls，
      * 否则会出现文件损坏的提示。 若想生成xlsx格式，请使用ExcelUtil.getWriter(true)创建
      */
-    public static void exportExcel(ExcelWriter writer, String filename, HttpServletResponse response) {
+    public static void exportExcel(HttpServletResponse response, String fileName, List<ExcelHeader2Option> headerOptions, Iterable<?> data) {
+        ExcelWriter writer = ExcelUtil.getWriter(true);
+        writer.setOnlyAlias(true);
+        for (ExcelHeader2Option option : headerOptions) {
+            String key = option.getKey();
+            String title = option.getTitle();
+            writer.addHeaderAlias(key, title);
+        }
+        writer.write(data);
+
         //设置标题
         try {
             //设置content—type header
             response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=utf-8");
-            response.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(filename, "UTF-8") + ".xlsx");
+            response.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(fileName, "UTF-8") + ".xlsx");
             ServletOutputStream outputStream = response.getOutputStream();
 
             writer.flush(outputStream, true);
@@ -125,9 +135,37 @@ public class Excel2Util {
     }
 
     /**
+     * 获取表头配置
+     */
+    public static List<ExcelHeader2Option> getExcelHeaderOption(Class<?> clazz) {
+        List<ExcelHeader2Option> headerOptions = new ArrayList<>();
+
+        // 获取类的所有声明的字段
+        Field[] fields = clazz.getDeclaredFields();
+
+        for (Field field : fields) {
+            ExcelFieldOption annotation = field.getAnnotation(ExcelFieldOption.class);
+
+            // 如果字段有 ExcelProperty 注解
+            if (annotation != null) {
+                String key = field.getName();
+                String title = annotation.value();
+                boolean require = annotation.require();
+
+                // 检查 title 是否有效
+                if (StrUtil.isNotBlank(title)) {
+                    headerOptions.add(new ExcelHeader2Option(key, title, require));
+                }
+            }
+        }
+
+        return headerOptions;
+    }
+
+    /**
      * 下载导入模板
      */
-    public static ResponseEntity<byte[]> createTemplate(List<ExcelHeader2Option> headerOptions) {
+    public static ResponseEntity<byte[]> createImportTemplate(List<ExcelHeader2Option> headerOptions) {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
         Workbook workbook = new XSSFWorkbook();
@@ -247,7 +285,7 @@ public class Excel2Util {
     /**
      * 读取数据
      */
-    public static <T> List<T> readDataFromExcel(List<Map<String, Object>> maps, Class<T> clazz) throws IOException {
+    public static <T> List<T> mapExcelDataToList(List<Map<String, Object>> maps, Class<T> clazz) throws IOException {
         Field[] fields = clazz.getDeclaredFields();
 
         return maps.stream()

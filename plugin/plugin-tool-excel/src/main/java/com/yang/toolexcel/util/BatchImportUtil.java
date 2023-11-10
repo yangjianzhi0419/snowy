@@ -1,6 +1,6 @@
 package com.yang.toolexcel.util;
 
-import com.yang.toolexcel.runner.BatchImportRunner;
+import com.yang.toolexcel.core.runner.BatchImportRunner;
 
 import java.util.ArrayList;
 import java.util.List;

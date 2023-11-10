@@ -1,4 +1,4 @@
-package com.yang.toolexcel.pojo;
+package com.yang.toolexcel.core.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
