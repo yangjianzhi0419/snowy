@@ -10,6 +10,8 @@
         <module name="web-app" />
         <module name="plugin-tool-api" />
         <module name="common" />
+        <module name="plugin-dev-api" />
+        <module name="plugin-dev" />
         <module name="plugin-gen" />
         <module name="plugin-gen-api" />
         <module name="plugin-sys" />
@@ -20,6 +22,8 @@
       <module name="common" target="1.8" />
       <module name="plugin" target="1.8" />
       <module name="plugin-api" target="1.8" />
+      <module name="plugin-dev" target="1.8" />
+      <module name="plugin-dev-api" target="1.8" />
       <module name="plugin-gen" target="1.8" />
       <module name="plugin-gen-api" target="1.8" />
       <module name="plugin-sys" target="1.8" />
@@ -36,6 +40,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="-parameters" />
+      <module name="plugin-dev" options="-parameters" />
+      <module name="plugin-dev-api" options="-parameters" />
       <module name="plugin-gen" options="-parameters" />
       <module name="plugin-gen-api" options="-parameters" />
       <module name="plugin-sys" options="-parameters" />
