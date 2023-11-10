@@ -17,7 +17,7 @@
         <!-- 系统功能插件api接口 -->
         <module>plugin-sys-api</module>
         <module>plugin-gen-api</module>
-        <module>plugin-tool-excel-api</module>
+        <module>plugin-tool-api</module>
     </modules>
 
 </project>

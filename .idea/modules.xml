@@ -9,8 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-gen-api/plugin-gen-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-gen-api/plugin-gen-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin/plugin-sys/plugin-sys.iml" filepath="$PROJECT_DIR$/plugin/plugin-sys/plugin-sys.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-sys-api/plugin-sys-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-sys-api/plugin-sys-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/plugin/plugin-tool-excel/plugin-tool-excel.iml" filepath="$PROJECT_DIR$/plugin/plugin-tool-excel/plugin-tool-excel.iml" />
-      <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-tool-excel-api/plugin-tool-excel-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-tool-excel-api/plugin-tool-excel-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin/plugin-tool/plugin-tool.iml" filepath="$PROJECT_DIR$/plugin/plugin-tool/plugin-tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-tool-api/plugin-tool-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-tool-api/plugin-tool-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/snowy.iml" filepath="$PROJECT_DIR$/.idea/snowy.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-app/web-app.iml" filepath="$PROJECT_DIR$/web-app/web-app.iml" />
     </modules>

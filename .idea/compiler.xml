@@ -7,13 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="plugin-sys-api" />
-        <module name="plugin-tool-excel" />
         <module name="web-app" />
+        <module name="plugin-tool-api" />
         <module name="common" />
-        <module name="plugin-tool-excel-api" />
         <module name="plugin-gen" />
         <module name="plugin-gen-api" />
         <module name="plugin-sys" />
+        <module name="plugin-tool" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +24,9 @@
       <module name="plugin-gen-api" target="1.8" />
       <module name="plugin-sys" target="1.8" />
       <module name="plugin-sys-api" target="1.8" />
+      <module name="plugin-tool" target="1.8" />
+      <module name="plugin-tool-api" target="1.8" />
+      <module name="plugin-tool-dynamic-api" target="1.8" />
       <module name="plugin-tool-excel" target="1.8" />
       <module name="plugin-tool-excel-api" target="1.8" />
       <module name="snowy" target="1.8" />
@@ -37,6 +40,9 @@
       <module name="plugin-gen-api" options="-parameters" />
       <module name="plugin-sys" options="-parameters" />
       <module name="plugin-sys-api" options="-parameters" />
+      <module name="plugin-tool" options="-parameters" />
+      <module name="plugin-tool-api" options="-parameters" />
+      <module name="plugin-tool-dynamic-api" options="-parameters" />
       <module name="plugin-tool-excel" options="-parameters" />
       <module name="plugin-tool-excel-api" options="-parameters" />
       <module name="web-app" options="-parameters" />
