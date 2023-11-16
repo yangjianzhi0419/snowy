@@ -52,7 +52,7 @@ public class GenBasicController {
     @ApiOperation("获取代码生成基础分页")
     @GetMapping("/gen/basic/page")
     public CommonResult<Page<GenBasic>> page(GenBasicPageParam genBasicPageParam) {
-        return CommonResult.success(genBasicService.page(genBasicPageParam));
+        return CommonResult.data(genBasicService.page(genBasicPageParam));
     }
 
     /**
@@ -65,7 +65,7 @@ public class GenBasicController {
     @ApiOperation("添加代码生成基础")
     @PostMapping("/gen/basic/add")
     public CommonResult<GenBasic> add(@RequestBody @Valid GenBasicAddParam genBasicAddParam) {
-        return CommonResult.success(genBasicService.add(genBasicAddParam));
+        return CommonResult.data(genBasicService.add(genBasicAddParam));
     }
 
     /**
@@ -78,7 +78,7 @@ public class GenBasicController {
     @ApiOperation("编辑代码生成基础")
     @PostMapping("/gen/basic/edit")
     public CommonResult<GenBasic> edit(@RequestBody @Valid GenBasicEditParam genBasicEditParam) {
-        return CommonResult.success(genBasicService.edit(genBasicEditParam));
+        return CommonResult.data(genBasicService.edit(genBasicEditParam));
     }
 
     /**
@@ -93,7 +93,7 @@ public class GenBasicController {
     public CommonResult<String> delete(@RequestBody @Valid @NotEmpty(message = "集合不能为空")
                                                CommonValidList<GenBasicIdParam> genBasicIdParamList) {
         genBasicService.delete(genBasicIdParamList);
-        return CommonResult.success();
+        return CommonResult.ok();
     }
 
     /**
@@ -106,7 +106,7 @@ public class GenBasicController {
     @ApiOperation("获取代码生成基础详情")
     @GetMapping("/gen/basic/detail")
     public CommonResult<GenBasic> detail(@Valid GenBasicIdParam genBasicIdParam) {
-        return CommonResult.success(genBasicService.detail(genBasicIdParam));
+        return CommonResult.data(genBasicService.detail(genBasicIdParam));
     }
 
     /**
@@ -119,7 +119,7 @@ public class GenBasicController {
     @ApiOperation("获取所有表信息")
     @GetMapping("/gen/basic/tables")
     public CommonResult<List<GenBasicTableResult>> dbsTable() {
-        return CommonResult.success(genBasicService.tables());
+        return CommonResult.data(genBasicService.tables());
     }
 
     /**
@@ -132,7 +132,7 @@ public class GenBasicController {
     @ApiOperation("获取表内所有字段信息")
     @GetMapping("/gen/basic/tableColumns")
     public CommonResult<List<GenBasicTableColumnResult>> tableColumns(GenBasicTableColumnParam genBasicTableColumnParam) {
-        return CommonResult.success(genBasicService.tableColumns(genBasicTableColumnParam));
+        return CommonResult.data(genBasicService.tableColumns(genBasicTableColumnParam));
     }
 
     /**
@@ -159,7 +159,7 @@ public class GenBasicController {
     @PostMapping(value = "/gen/basic/execGenPro")
     public CommonResult<String> execGenPro(@RequestBody @Valid GenBasicIdParam genBasicIdParam, HttpServletResponse response) throws IOException {
         genBasicService.execGenPro(genBasicIdParam, response);
-        return CommonResult.success();
+        return CommonResult.ok();
     }
 
     /**
@@ -172,6 +172,6 @@ public class GenBasicController {
     @ApiOperation("预览代码生成")
     @GetMapping(value = "/gen/basic/previewGen")
     public CommonResult<GenBasicPreviewResult> previewGen(@Valid GenBasicIdParam genBasicIdParam) {
-        return CommonResult.success(genBasicService.previewGen(genBasicIdParam));
+        return CommonResult.data(genBasicService.previewGen(genBasicIdParam));
     }
 }

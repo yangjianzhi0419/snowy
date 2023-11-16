@@ -18,7 +18,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/snwoy?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&useInformationSchema=true
     username: root
-    password: 2375022
+    password: 237502
   # 文件上传
   servlet:
     multipart:
@@ -37,7 +37,7 @@ server:
 # mybatis-plus configuration
 mybatis-plus:
   configuration:
-    map-underscore-to-camel-case: false
+    map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
     db-config:

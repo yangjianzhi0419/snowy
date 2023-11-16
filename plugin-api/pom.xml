@@ -19,6 +19,7 @@
         <module>plugin-gen-api</module>
         <module>plugin-tool-api</module>
         <module>plugin-dev-api</module>
+        <module>plugin-biz-api</module>
     </modules>
 
 </project>

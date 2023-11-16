@@ -6,22 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="plugin-sys-api" />
-        <module name="web-app" />
         <module name="plugin-tool-api" />
-        <module name="common" />
-        <module name="plugin-dev-api" />
+        <module name="plugin-biz" />
         <module name="plugin-dev" />
         <module name="plugin-gen" />
-        <module name="plugin-gen-api" />
         <module name="plugin-sys" />
         <module name="plugin-tool" />
+        <module name="plugin-sys-api" />
+        <module name="web-app" />
+        <module name="application" />
+        <module name="common" />
+        <module name="plugin-dev-api" />
+        <module name="plugin-biz-api" />
+        <module name="plugin-gen-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="application" target="1.8" />
       <module name="common" target="1.8" />
       <module name="plugin" target="1.8" />
       <module name="plugin-api" target="1.8" />
+      <module name="plugin-biz" target="1.8" />
+      <module name="plugin-biz-api" target="1.8" />
       <module name="plugin-dev" target="1.8" />
       <module name="plugin-dev-api" target="1.8" />
       <module name="plugin-gen" target="1.8" />
@@ -30,16 +36,16 @@
       <module name="plugin-sys-api" target="1.8" />
       <module name="plugin-tool" target="1.8" />
       <module name="plugin-tool-api" target="1.8" />
-      <module name="plugin-tool-dynamic-api" target="1.8" />
-      <module name="plugin-tool-excel" target="1.8" />
-      <module name="plugin-tool-excel-api" target="1.8" />
       <module name="snowy" target="1.8" />
       <module name="web-app" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="application" options="-parameters" />
       <module name="common" options="-parameters" />
+      <module name="plugin-biz" options="-parameters" />
+      <module name="plugin-biz-api" options="-parameters" />
       <module name="plugin-dev" options="-parameters" />
       <module name="plugin-dev-api" options="-parameters" />
       <module name="plugin-gen" options="-parameters" />
@@ -48,9 +54,6 @@
       <module name="plugin-sys-api" options="-parameters" />
       <module name="plugin-tool" options="-parameters" />
       <module name="plugin-tool-api" options="-parameters" />
-      <module name="plugin-tool-dynamic-api" options="-parameters" />
-      <module name="plugin-tool-excel" options="-parameters" />
-      <module name="plugin-tool-excel-api" options="-parameters" />
       <module name="web-app" options="-parameters" />
     </option>
   </component>

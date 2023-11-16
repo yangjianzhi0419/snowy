@@ -43,7 +43,7 @@ public class GenConfigController {
     @ApiOperation("获取代码生成详细配置分页")
     @GetMapping("/gen/config/list")
     public CommonResult<List<GenConfig>> list(GenConfigListParam genConfigListParam) {
-        return CommonResult.success(genConfigService.list(genConfigListParam));
+        return CommonResult.data(genConfigService.list(genConfigListParam));
     }
 
     /**
@@ -57,7 +57,7 @@ public class GenConfigController {
     @PostMapping("/gen/config/edit")
     public CommonResult<String> edit(@RequestBody @Valid GenConfigEditParam genConfigEditParam) {
         genConfigService.edit(genConfigEditParam);
-        return CommonResult.success();
+        return CommonResult.ok();
     }
 
     /**
@@ -72,7 +72,7 @@ public class GenConfigController {
     public CommonResult<String> delete(@RequestBody @Valid @NotEmpty(message = "集合不能为空")
                                                CommonValidList<GenConfigIdParam> genConfigIdParamList) {
         genConfigService.delete(genConfigIdParamList);
-        return CommonResult.success();
+        return CommonResult.ok();
     }
 
     /**
@@ -85,7 +85,7 @@ public class GenConfigController {
     @ApiOperation("获取代码生成详细配置详情")
     @GetMapping("/gen/config/detail")
     public CommonResult<GenConfig> detail(@Valid GenConfigIdParam genConfigIdParam) {
-        return CommonResult.success(genConfigService.detail(genConfigIdParam));
+        return CommonResult.data(genConfigService.detail(genConfigIdParam));
     }
 
     /**
@@ -100,6 +100,6 @@ public class GenConfigController {
     public CommonResult<String> editBatch(@RequestBody @Valid @NotEmpty(message = "集合不能为空")
                                                   CommonValidList<GenConfigEditParam> genConfigEditParamList) {
         genConfigService.editBatch(genConfigEditParamList);
-        return CommonResult.success();
+        return CommonResult.ok();
     }
 }

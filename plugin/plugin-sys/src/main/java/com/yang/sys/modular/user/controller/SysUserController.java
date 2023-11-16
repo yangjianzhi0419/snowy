@@ -1,9 +1,6 @@
 package com.yang.sys.modular.user.controller;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.yang.common.pojo.CommonResult;
-import com.yang.sys.modular.user.entity.SysUser;
 import com.yang.sys.modular.user.service.SysUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -26,6 +23,6 @@ public class SysUserController {
     @ApiOperation("测试")
     @GetMapping("/sys/user/get")
     public CommonResult<String> page() {
-        return CommonResult.success("sdfdsfs");
+        return CommonResult.data("sdfdsfs");
     }
 }

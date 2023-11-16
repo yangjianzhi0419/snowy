@@ -45,6 +45,7 @@
         <module>plugin-api</module>
         <!-- 插件模块 -->
         <module>plugin</module>
+        <module>application</module>
     </modules>
 
     <dependencyManagement>

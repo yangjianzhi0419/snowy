@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ba67e66e-0217-40b6-b8a7-bf49daaf8d65" name="默认变更列表" comment="新增系统功能">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/yang/common/prop/CommonProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/yang/common/util/CommonCommandUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/yang/common/util/CommonFileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin-api/plugin-biz-api/plugin-biz-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin-api/plugin-biz-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin-api/plugin-biz-api/src/main/java/com/yang/biz/PackageInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin-api/plugin-dev-api/src/main/java/com/yang/dev/api/BackupApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin-api/plugin-dev-api/src/main/java/com/yang/dev/api/DevConfigApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin-api/plugin-dev-api/src/main/java/com/yang/dev/api/DevJobApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin-api/plugin-tool-api/src/main/java/com/yang/tool/api/CommonExcelApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-biz/plugin-biz.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-biz/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-biz/src/main/java/com/yang/biz/core/config/BizConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-dev/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-dev/src/main/java/com/yang/dev/core/config/DevConfigInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-dev/src/main/java/com/yang/dev/modular/table/mapper/DynamicTableMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-dev/src/main/java/com/yang/dev/modular/table/param/DynamicTableColumnParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/core/constant/DevConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/core/listener/BackupJobListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/core/listener/DevJobListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/controller/BackupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/entity/BackupRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/enums/BackupTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/mapper/BackupMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/mapper/mapping/BackupMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/param/BackupAddParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/param/BackupConfigParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/param/BackupListParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/param/BackupPageParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/param/BackupQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/result/BackupConfigResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/service/BackupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/service/impl/BackupServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/backup/task/BackupDbTaskRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/controller/DevConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/entity/DevConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/enums/DevConfigCategoryEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/mapper/DevConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/mapper/mapping/DevConfigMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/param/DevConfigAddParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/param/DevConfigBatchParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/param/DevConfigEditParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/param/DevConfigIdParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/param/DevConfigListParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/param/DevConfigPageParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/service/DevConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/config/service/impl/DevConfigServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/controller/DevJobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/entity/DevJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/enums/DevJobCategoryEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/enums/DevJobStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/mapper/DevJobMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/mapper/mapping/DevJobMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/param/DevJobAddParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/param/DevJobEditParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/param/DevJobIdParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/param/DevJobListParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/param/DevJobPageParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/provider/DevJobApiProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/service/DevJobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/service/impl/DevJobServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/job/task/DevJobTimerTaskRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/plugin-tool/src/main/java/com/yang/tool/modular/excel/provider/CommonExcelApiProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snowy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/snowy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/application/application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/yang/common/pojo/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/yang/common/pojo/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin-api/plugin-dev-api/plugin-dev-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin-api/plugin-dev-api/plugin-dev-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin-api/plugin-dev-api/src/main/java/com/yang/dev/DynamicTableApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/plugin-api/plugin-dev-api/src/main/java/com/yang/dev/api/DynamicTableApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin-api/plugin-tool-api/plugin-tool-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin-api/plugin-tool-api/plugin-tool-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/plugin-dev/plugin-dev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/plugin-dev/plugin-dev.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/plugin-gen/src/main/java/com/yang/gen/modular/basic/controller/GenBasicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/plugin-gen/src/main/java/com/yang/gen/modular/basic/controller/GenBasicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/plugin-gen/src/main/java/com/yang/gen/modular/config/controller/GenConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/plugin-gen/src/main/java/com/yang/gen/modular/config/controller/GenConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/user/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/plugin-sys/src/main/java/com/yang/sys/modular/user/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/plugin-tool/plugin-tool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/plugin-tool/plugin-tool.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web-app/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2YFee2PtzQiibyjLtNx1aSRXRlN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/plugin/plugin-sys" />
+    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.21566111" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\_temp\snowy\plugin\plugin-sys" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="web-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yang.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="ba67e66e-0217-40b6-b8a7-bf49daaf8d65" name="默认变更列表" comment="" />
+      <created>1700125849412</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700125849412</updated>
+      <workItem from="1700125851096" duration="156000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增系统功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增系统功能" />
+  </component>
+</project>

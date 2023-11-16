@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/application/application.iml" filepath="$PROJECT_DIR$/application/application.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin/plugin.iml" filepath="$PROJECT_DIR$/plugin/plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin/plugin-biz/plugin-biz.iml" filepath="$PROJECT_DIR$/plugin/plugin-biz/plugin-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-biz-api/plugin-biz-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-biz-api/plugin-biz-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin/plugin-dev/plugin-dev.iml" filepath="$PROJECT_DIR$/plugin/plugin-dev/plugin-dev.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-dev-api/plugin-dev-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-dev-api/plugin-dev-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin/plugin-gen/plugin-gen.iml" filepath="$PROJECT_DIR$/plugin/plugin-gen/plugin-gen.iml" />
@@ -13,7 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-sys-api/plugin-sys-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-sys-api/plugin-sys-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin/plugin-tool/plugin-tool.iml" filepath="$PROJECT_DIR$/plugin/plugin-tool/plugin-tool.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-tool-api/plugin-tool-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-tool-api/plugin-tool-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/snowy.iml" filepath="$PROJECT_DIR$/.idea/snowy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snowy.iml" filepath="$PROJECT_DIR$/snowy.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-app/web-app.iml" filepath="$PROJECT_DIR$/web-app/web-app.iml" />
     </modules>
   </component>

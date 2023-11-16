@@ -1,4 +1,4 @@
-package com.yang.dev;
+package com.yang.dev.api;
 
 /**
  * 动态表API

@@ -46,11 +46,11 @@ public class CommonResult<T> {
 
     // ============================  构建  ==================================
 
-    public static <T> CommonResult<T> success(T data) {
+    public static <T> CommonResult<T> data(T data) {
         return new CommonResult<>(CODE_SUCCESS, data, "ok");
     }
 
-    public static <T> CommonResult<T> success() {
+    public static <T> CommonResult<T> ok() {
         return new CommonResult<>(CODE_SUCCESS, null, "操作成功");
     }
 
