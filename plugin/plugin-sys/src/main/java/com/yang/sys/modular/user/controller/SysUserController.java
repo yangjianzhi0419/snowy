@@ -17,12 +17,4 @@ import javax.annotation.Resource;
 @RestController
 public class SysUserController {
 
-    @Resource
-    private SysUserService sysUserService;
-
-    @ApiOperation("测试")
-    @GetMapping("/sys/user/get")
-    public CommonResult<String> page() {
-        return CommonResult.data("sdfdsfs");
-    }
 }

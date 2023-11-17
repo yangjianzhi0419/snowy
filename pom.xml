@@ -34,6 +34,8 @@
         <dynamic.datasource.version>3.5.1</dynamic.datasource.version>
         <easy.trans.version>2.1.7</easy.trans.version>
         <beetl.version>1.2.40.Beetl.RELEASE</beetl.version>
+        <ip2region.version>2.6.3</ip2region.version>
+        <smcrypto.version>0.3.2</smcrypto.version>
     </properties>
 
     <modules>
@@ -127,6 +129,20 @@
                 <groupId>com.ibeetl</groupId>
                 <artifactId>beetl-framework-starter</artifactId>
                 <version>${beetl.version}</version>
+            </dependency>
+
+            <!-- ip2region -->
+            <dependency>
+                <groupId>org.lionsoul</groupId>
+                <artifactId>ip2region</artifactId>
+                <version>${ip2region.version}</version>
+            </dependency>
+
+            <!-- sm-crypto -->
+            <dependency>
+                <groupId>com.antherd</groupId>
+                <artifactId>sm-crypto</artifactId>
+                <version>${smcrypto.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

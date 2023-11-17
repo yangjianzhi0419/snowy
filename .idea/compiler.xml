@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="plugin-tool-api" />
-        <module name="plugin-biz" />
         <module name="plugin-dev" />
         <module name="plugin-gen" />
         <module name="plugin-sys" />
@@ -17,7 +16,6 @@
         <module name="application" />
         <module name="common" />
         <module name="plugin-dev-api" />
-        <module name="plugin-biz-api" />
         <module name="plugin-gen-api" />
       </profile>
     </annotationProcessing>

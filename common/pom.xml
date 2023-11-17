@@ -99,5 +99,17 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!-- ip2region -->
+        <dependency>
+            <groupId>org.lionsoul</groupId>
+            <artifactId>ip2region</artifactId>
+        </dependency>
+
+        <!-- sm-crypto -->
+        <dependency>
+            <groupId>com.antherd</groupId>
+            <artifactId>sm-crypto</artifactId>
+        </dependency>
     </dependencies>
 </project>

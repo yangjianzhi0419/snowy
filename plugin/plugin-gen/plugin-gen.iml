@@ -157,6 +157,8 @@
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-commons:2.2.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-crypto:5.7.2" level="project" />
     <orderEntry type="library" name="Maven: com.fhs-opensource:easy-trans-mybatis-plus-extend:2.1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.lionsoul:ip2region:2.6.3" level="project" />
+    <orderEntry type="library" name="Maven: com.antherd:sm-crypto:0.3.2" level="project" />
     <orderEntry type="library" name="Maven: com.ibeetl:beetl-framework-starter:1.2.40.Beetl.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.ibeetl:beetl:3.9.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.antlr:antlr4-runtime:4.9.2" level="project" />

@@ -6,8 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin/plugin.iml" filepath="$PROJECT_DIR$/plugin/plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/plugin/plugin-biz/plugin-biz.iml" filepath="$PROJECT_DIR$/plugin/plugin-biz/plugin-biz.iml" />
-      <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-biz-api/plugin-biz-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-biz-api/plugin-biz-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin/plugin-dev/plugin-dev.iml" filepath="$PROJECT_DIR$/plugin/plugin-dev/plugin-dev.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin-api/plugin-dev-api/plugin-dev-api.iml" filepath="$PROJECT_DIR$/plugin-api/plugin-dev-api/plugin-dev-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin/plugin-gen/plugin-gen.iml" filepath="$PROJECT_DIR$/plugin/plugin-gen/plugin-gen.iml" />

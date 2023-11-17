@@ -17,7 +17,6 @@
         <module>plugin-gen</module>
         <module>plugin-tool</module>
         <module>plugin-dev</module>
-        <module>plugin-biz</module>
     </modules>
 
 </project>
